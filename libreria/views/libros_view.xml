@@ -48,7 +48,7 @@
                 <field name="editorial"/>
                 <field name="isbn"/>
                 <field name="autor_id"/>
-                <!--<templates>
+                <templates>
                     <t t-name="kanban-box">
                         <div class="es_kanban_global_click">
                             <div class="o_kanban_image">
@@ -65,8 +65,8 @@
                             </div>
                         </div>
                     </t>
-                </templates>-->
+                </templates>
             </kanban>
         </field>
-    </record>
-</odoo>-->
+    </record>-->
+</odoo>
