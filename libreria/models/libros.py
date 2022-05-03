@@ -10,7 +10,7 @@ class Libros(models.Model):
     editorial = fields.Char(string="editorial", required=True)
     isbn = fields.Char(string="ISBN", required=True)
     autor_id = fields.Many2one(comodel_name='autor', string="Autor", required=True)
-    apellido_autor = fields.Many2one(related='autor_id.last_name', string="Apellido del autor")
+    last_name = fields.Many2one(related='autor_id.last_name', string="Apellido del autor")
     imagen = fields.Binary(string="Imagen")
     
     
