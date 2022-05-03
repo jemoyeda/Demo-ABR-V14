@@ -5,8 +5,8 @@ class Libros(models.Model):
     _name = 'autor'
     _rec_name = 'last_name'
 
-    name = fields.Char(string="Autor", required=True)
-    last_name = fields.Char(string="Apellido", required=True)
+    name = fields.Char(string="Autor")
+    last_name = fields.Char(string="Apellido")
     
     
     
