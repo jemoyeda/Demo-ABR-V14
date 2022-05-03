@@ -14,7 +14,6 @@
                             <field name="editorial"/>
                             <field name="isbn"/>
                             <field name="autor_id"/>
-                            <field name="last_name"/>
                         </group>
                     </group>
                 </sheet>
@@ -35,38 +34,4 @@
             </tree>
         </field>
     </record>
-
-
-    <!--Vista Kanban para libros
-    <record id="libros_kanban_view" model="ir.ui.view">
-        <field name="name">libro.kanban.view</field>
-        <field name="model">libros</field>
-        <field name="arch" type="xml">
-            <kanban>
-                <field name="id"/>
-                <field name="name"/>
-                <field name="editorial"/>
-                <field name="isbn"/>
-                <field name="autor_id"/>
-                <templates>
-                    <t t-name="kanban-box">
-                        <div class="es_kanban_global_click">
-                            <div class="o_kanban_image">
-                                <img t-att-src="kanban_image('libros', 'imagen', 'record.id.raw.value')" alt="Imagen"/>
-                            </div>
-                            <div class="es_kanban_detalles">
-                                <div class="o_kanban_record_top"/>
-                                    <div calss="o_kanban_record_headings">
-                                        <strong class="o_kanban_record_title or_partner_headings">
-                                            <field name="name"/>
-                                        </strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </t>
-                </templates>
-            </kanban>
-        </field>
-    </record>-->
 </odoo>
