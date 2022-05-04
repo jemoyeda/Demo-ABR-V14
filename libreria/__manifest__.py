@@ -13,7 +13,7 @@
 
             'views/menu_view.xml',
             'views/libros_view.xml',
-            'views/hr_employee.xml',
+            'views/hr_employee_view.xml',
             'security/libreria_security.xml',
             'security/ir.model.access.csv',
         ],
