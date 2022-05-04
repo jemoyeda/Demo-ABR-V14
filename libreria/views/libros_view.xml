@@ -15,6 +15,7 @@
                             <field name="isbn"/>
                             <field name="autor_id"/>
                             <field name="lastname_autor"/>
+                            <field name="description" help="Este campo describe todas las caracteristicas del libro"/>
                         </group>
                     </group>
                 </sheet>
