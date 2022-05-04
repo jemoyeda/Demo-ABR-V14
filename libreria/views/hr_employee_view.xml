@@ -2,7 +2,7 @@
 <odoo>
     <record id="hr_employee_view_inherit" model="ir.ui.view">
         <field name="name">hr_employee_inherit</field>
-        <field name="model">hr_employee</field>
+        <field name="model">hr.employee</field>
         <field name="inherit_id" ref="hr.view_employee_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='coach_id']" position="after">
