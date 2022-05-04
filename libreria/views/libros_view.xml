@@ -10,6 +10,7 @@
                     <group>
                         <group>
                             <field name="imagen" widget="image" class="oi_avatar"/> <!-- Agregar widget y class para que aparezca la imagen en el formulario-->
+                            <field name="supervisor_id"/>
                             <field name="name"/>
                             <field name="editorial" help="Colocar nombre de la editorial"/>
                             <field name="isbn" help="Codigo de identificacion de los libros"/>
