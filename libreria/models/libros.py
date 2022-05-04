@@ -14,9 +14,9 @@ class Libros(models.Model):
     description = fields.Char(string="Descripcion", compute="_compute_description")
 
 #Funciones de campos calculados    
-    @api.depends()
+    @api.depends('name', 'editorial', 'lastname_autor')        #Se coloca el api.depends para mejorar la actualizacion de datos del campo computado
     def _compute_description(self):
-        self.description = self.name + " es de la " + self.editorial + " y escrito por " + self.lastname_autor
+        self.description = self.name + " es de la editorial " + self.editorial + " y escrito por " + self.lastname_autor
     
     
     
