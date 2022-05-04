@@ -5,7 +5,7 @@ class Libros(models.Model):
     _name = 'libros'
     
 #Campos del modulo creado
-    supervisor_id = fields.Many2one(comodel_name='hr_employees', string="Supervisor")
+    supervisor_id = fields.Many2one(comodel_name='hr.employee', string="Supervisor")
     name = fields.Char(string="Nombre del libro", required=True)
     editorial = fields.Char(string="editorial", required=True)
     isbn = fields.Char(string="ISBN", required=True)
