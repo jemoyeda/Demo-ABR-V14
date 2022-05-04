@@ -16,7 +16,7 @@ class Libros(models.Model):
 #Funciones de campos calculados    
     @api.depends()
     def _compute_description(self):
-        self.description = self.name + "de la " + self.editorial + "realizado por el autor " + self.lastname_autor
+        self.description = self.name + " es de la " + self.editorial + " y escrito por " + self.lastname_autor
     
     
     
