@@ -11,8 +11,8 @@
                         <group>
                             <field name="imagen" widget="image" class="oi_avatar"/> <!-- Agregar widget y class para que aparezca la imagen en el formulario-->
                             <field name="name"/>
-                            <field name="editorial"/>
-                            <field name="isbn"/>
+                            <field name="editorial" help="Colocar nombre de la editorial"/>
+                            <field name="isbn" help="Codigo de identificacion de los libros"/>
                             <field name="autor_id"/>
                             <field name="lastname_autor"/>
                             <field name="description" help="Este campo describe todas las caracteristicas del libro"/>

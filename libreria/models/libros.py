@@ -15,7 +15,7 @@ class Libros(models.Model):
     
     @api.depends()
     def _compute_description(self):
-        self.description = self.name + 'de la ' + self.editorial + 'realizado por el autor ' + self.autor_id
+        self.description = self.name + "de la " + self.editorial + "realizado por el autor " + self.autor_id
     
     
     
