@@ -8,8 +8,6 @@
             <xpath expr="//field[@name='coach_id']" position="after">
                 <field name="id_suprevisor" help="Es supervisor??"/>
             </xpath>
+        </field>
     </record>
-
-    
-
 </odoo>
