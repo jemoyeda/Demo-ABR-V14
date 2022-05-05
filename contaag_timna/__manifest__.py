@@ -22,6 +22,7 @@
     # Siempre cargar
     'data': [
         'view/motivo.xml',
+        'view/ejecutado.xml',
     ],
 
     # Solo carga los datos de demostracion

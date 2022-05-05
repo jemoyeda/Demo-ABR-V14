@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <<record id="ejecutado_view_form" model="ir.ui.view">
+        <field name="name">ejecutado.view.form.inherit</field>
+        <field name="model">crossovered.budget.lines</field>
+        <field name="inherit_id" ref="account_budget.view_crossovered_budget_line_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='practical_amount']" position="after">
+                <field name="ejecutado"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
