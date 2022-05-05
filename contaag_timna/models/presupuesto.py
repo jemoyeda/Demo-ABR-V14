@@ -27,11 +27,11 @@ class desviacion(models.Model):
       def _compute_desviacion(self):
             for record in self:
                   if record[('planned_amount')] == 0:
-                        record[('x_desviacion')] = 0
+                        record[('desviacion')] = 0
                   else:
                         if record[('practical_amount')] == 0:
-                              record[('x_desviacion')] = -1
+                              record[('desviacion')] = -1
                         else:
-                              record[('x_desviacion')] = (record.practical_amount / record.planned_amount) + 1
+                              record[('desviacion')] = (record.practical_amount / record.planned_amount) + 1
       
       
