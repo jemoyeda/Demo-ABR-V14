@@ -1,0 +1,11 @@
+<?xml version="1.0" enconding="utf-8"?>
+<record id="view_model.name_tree" model="ir.ui.view">
+    <field name="name">motivo_inherit_view</field>
+    <field name="model">crossovered.budget.lines</field>
+    <field name="inherit_id" ref="account_budget.view_crossovered_budget_line_form"/>
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='percentage']" position="after">
+            <field name="motivo" help="En este campo se describe el motivo del presupuesto. Maximo 50 caracteres"/>
+        </xpath>
+    </field>
+</record>
