@@ -1,6 +1,6 @@
 <?xml version="1.0" enconding="utf-8"?>
 <odoo>
-    <record id="view_model.name_tree" model="ir.ui.view">
+    <record id="inherit_view_form_motivo" model="ir.ui.view">
         <field name="name">motivo_inherit_view</field>
         <field name="model">crossovered.budget.lines</field>
         <field name="inherit_id" ref="account_budget.view_crossovered_budget_line_form"/>

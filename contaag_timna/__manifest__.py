@@ -21,6 +21,7 @@
 
     # Siempre cargar
     'data': [
+        'view/motivo.xml',
     ],
 
     # Solo carga los datos de demostracion
@@ -32,9 +33,9 @@
     'application': True,
     'auto_install': False,
 
-    'view': [
-        'view/motivo.xml',
-    ],
+    #'qwe': [
+    #    'view/motivo.xml',
+    #],
 
     'license': 'LGPL-3',
 }
