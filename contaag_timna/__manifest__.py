@@ -23,7 +23,7 @@
     'data': [
         'view/motivo.xml',
         'view/ejecutado.xml',
-        'view/desviacion.xml',
+    #    'view/desviacion.xml',
     ],
 
     # Solo carga los datos de demostracion
