@@ -8,6 +8,8 @@
             <xpath expr="//field[@name='ejecutado']" position="after">
                 <field name="desviacion" widget="percentage" avg="totales"/>
                 <button type="object" name="action_open_budget_entries" string="Entries..." icon="fa-arrow-circle-o-right"/>
+                <field name="theoritical_amount" string="Diferencia" optional="hide"/>
+                <field name="percentage" widget="percentage" string="Desviacion" optional="hide"/>
             </xpath>
         </field>
     </record>
