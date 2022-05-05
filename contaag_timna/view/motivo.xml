@@ -5,15 +5,9 @@
         <field name="model">crossovered.budget.lines</field>
         <field name="inherit_id" ref="account_budget.view_crossovered_budget_line_form"/>
         <field name="arch" type="xml">
-            <form string="Budget Lines">
-                <sheet>
-                    <group col="4">
-                        <xpath expr="//field[@name='general_budget_id']" position="after">
-                            <field name="motivo" help="En este campo se describe el motivo del presupuesto. Maximo 50 caracteres"/>
-                        </xpath>       
-                    </group>
-                </sheet>
-            </form>
+            <xpath expr="//field[@name='general_budget_id']" position="after">
+                <field name="motivo" help="En este campo se describe el motivo del presupuesto. Maximo 50 caracteres"/>
+            </xpath>
         </field>
     </record>
 </odoo>
