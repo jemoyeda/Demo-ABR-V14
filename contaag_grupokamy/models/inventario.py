@@ -37,7 +37,7 @@ class informe(models.Model):
     @api.depends('available_quantity', 'informe_cantidad_unidad')
     def _compute_cantidad_total(self):
         for record in self:
-            if record['informe_cantidad_unidad'] ==0 :
+            if record['informe_cantidad_unidad'] == 0 :
                 record['informe_cantidad_total'] = record['available_quantity']
             else:
                 record['informe_cantidad_total'] = record['informe_cantidad_unidad'] * record['available_quantity']
