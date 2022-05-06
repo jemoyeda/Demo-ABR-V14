@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="producto_view_form_inherti" model="ir.ui.view">
+        <field name="name">producto_view.form.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='barcode']" position="after">
+                <field name="cantidad_unidad"/>
+                <field name="estado"/>
+                <field name="modelo"/>
+                <field name="capacidad"/>
+                <field name="marca"/>
+                <field name="aplica"/>
+                <field name="equipo" string="Equipo Compuesto"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

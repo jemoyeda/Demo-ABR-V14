@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="informe_view_form_inherit" model="ir.ui.view">
+        <field name="name">informe_view.form.inherit</field>
+        <field name="model">stock.quant</field>
+        <field name="inherit_id" ref="stock.view_stock_quant_tree_editable"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='available_quantity']" position="after">
+                <field name="informe_cantidad_unidad"/>
+                <field name="informe_cantidad_total" sum="Total"/>
+                <field name="informe_estado" optional="show"/>
+                <field name="informe_equipo_compuesto" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
